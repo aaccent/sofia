@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="./style/main.css" type="text/css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/map-style.css" />
+</head>
+
+<body>
+    <header class="header_top">
+        <div class="container">
+            <div class="header_top__logo">
+                <a href="/">
+                    <img src="./image/logo-sofia.svg" alt="logo">
+                </a>
+                <div class="languages_width">
+                    <div class="button_lang__text">RU</div>
+                    <ul class="languages_list">
+                        <li class="active">
+                            <a href="#">RU</a>
+                        </li>
+                        <li>
+                            <a href="#">ENG</a>
+                        </li>
+                        <li>
+                            <a href="#">ES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_menu">
+                <span></span>
+            </div>
+            <div class="header_top__data">
+                <a href="tel:+34 696 398 157" class="header_top__phone">+34 696 398 157</a>
+                <button class="header_top__booking">Бронирование</button>
+            </div>
+        </div>
+    </header>
+
+    <header class="header_none">
+        <div class="container">
+            <ul class="header_none__nav">
+                <div class="mobile-top_data">
+                    <a href="tel:+34 696 398 157" class="header_top__phone">+34 696 398 157</a>
+                    <button class="header_top__booking">Бронирование</button>
+                </div>
+                <li><a href="#">Главная</a></li>
+                <li><a href="/#content" class="transparent">Описание</a></li>
+                <li><a href="/#programm" class="transparent">Программа лояльности</a></li>
+                <li><a href="/#winter" class="transparent">Зимний сезон</a></li>
+                <li><a href="/#reviews" class="transparent">Отзывы и обратная связь</a></li>
+            </ul>
+            <ul class="header_none__nav">
+                <li><a href="#">Аппартаменты и сервис</a></li>
+                <li><a href="#" class="transparent">Каталог апартаментов</a></li>
+                <li><a href="#service" class="transparent">Сервис</a></li>
+                <li><a href="#time" class="transparent">Долгосрочная аренда</a></li>
+            </ul>
+            <ul class="header_none__nav">
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <ul class="breadcrumps">
+                <li><a href="/">Главная</a></li>
+                <span>—</span>
+                <li>Каталог аппартаментов</li>
+            </ul>
+        </div>
+        <section class="catalog_block">
+            <div class="container">
+                <div class="catalog_title">Каталог <span>апартаментов</span></div>
+                <div class="catalog_subtitle">Sofia — больше, чем апартаменты в аренду и лучше, чем отель. В
+                    распоряжении наших гостей отдельные апартаменты и пятизвездочный сервис.</div>
+                <div class="catalog_flex">
+                    <a href="#" class="catalog_block">
+                        <div style="background-image:url('./image/catalog-1.png')" class="catalog_img">
+                            <div class="catalog_background">Подробнее</div>
+                        </div>
+                        <img src="./image/niz.png" alt="niz" class="catalog_small__img">
+                        <div class="catalog_flex__title">Нижний этаж</div>
+                    </a>
+                    <a href="#" class="catalog_block">
+                        <div style="background-image:url('./image/catalog-2.png')" class="catalog_img">
+                            <div class="catalog_background">Подробнее</div>
+                        </div>
+                        <img src="./image/ter.png" alt="niz" class="catalog_small__img">
+                        <div class="catalog_flex__title">Большая терасса</div>
+                    </a>
+                    <a href="#" class="catalog_block">
+                        <div style="background-image:url('./image/catalog-3.png')" class="catalog_img">
+                            <div class="catalog_background">Подробнее</div>
+                        </div>
+                        <img src="./image/bal.png" alt="niz" class="catalog_small__img">
+                        <div class="catalog_flex__title">Большая спальня</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog_appartament">
+            <div class="container">
+                <div class="catalog_appartament__title">Во всех наших апартаментах:</div>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="catalog_appartament__block">
+                            <img src="./image/bed.png" alt="" class="catalog_appartament__block_icon">
+                            <div class="catalog_appartament__block_text">Спальня с большой двуспальной (180 х 200) или
+                                двумя<br> односпальными (2 х 90 х 200) кроватями</div>
+                        </div>
+                        <div class="catalog_appartament__block">
+                            <img src="./image/living-room.png" alt="" class="catalog_appartament__block_icon">
+                            <div class="catalog_appartament__block_text">Гостиная — студия с диваном-кроватью (160 х
+                                180)</div>
+                        </div>
+                        <div class="catalog_appartament__twoblock">
+                            <div class="catalog_appartament__block">
+                                <img src="./image/wi-fi.png" alt="" class="catalog_appartament__block_icon">
+                                <div class="catalog_appartament__block_text">Wi-Fi free</div>
+                            </div>
+                            <div class="catalog_appartament__block">
+                                <img src="./image/tv.png" alt="" class="catalog_appartament__block_icon">
+                                <div class="catalog_appartament__block_text">Спутниковое ТВ</div>
+                            </div>
+                        </div>
+                        <div class="catalog_appartament__block">
+                            <img src="./image/kitchen.png" alt="" class="catalog_appartament__block_icon">
+                            <div class="catalog_appartament__block_text">Оборудованная кухня (холодильник, варочная
+                                панель,<br> микроволновая печь, электрочайник, кухонная и столовая посуда)</div>
+                        </div>
+                        <div class="catalog_appartament__block">
+                            <img src="./image/terrace.png" alt="" class="catalog_appartament__block_icon">
+                            <div class="catalog_appartament__block_text">Мебелированная терраса</div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="catalog_appartament__block">
+                            <img src="./image/bathroom.png" alt="" class="catalog_appartament__block_icon">
+                            <div class="catalog_appartament__block_text">Ванная комната: душ, фен, полотенцесушитель<br>
+                                и водонагреватель</div>
+                        </div>
+                        <div class="catalog_appartament__block">
+                            <img src="./image/soap-bathroom.png" alt="" class="catalog_appartament__block_icon">
+                            <div class="catalog_appartament__block_text">Натуральная косметика и средства гигиены в<br>
+                                индивидуальной упаковке</div>
+                        </div>
+                        <div class="catalog_appartament__block">
+                            <img src="./image/bathrobe.png" alt="" class="catalog_appartament__block_icon">
+                            <div class="catalog_appartament__block_text">Халаты для взрослых и детей, одноразовые
+                                тапочки</div>
+                        </div>
+                        <div class="catalog_appartament__block">
+                            <img src="./image/bunk-bed.png" alt="" class="catalog_appartament__block_icon">
+                            <div class="catalog_appartament__block_text">Детская кроватка для малышей до 1 года —
+                                бесплатно<span>*</span></div>
+                        </div>
+                        <div class="catalog_appartament__block">
+                            <img src="./image/noun-bed.png" alt="" class="catalog_appartament__block_icon">
+                            <div class="catalog_appartament__block_text">Дополнительная кровать-раскладушка — 700
+                                руб/ночь<span>*</span></div>
+                        </div>
+                        <div class="catalog_appartament__block">
+                            <div class="catalog_appartament__block_text"><span>*По вашему запросу</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog_pleasure">
+            <div class="container">
+                <div id="#service" class="catalog_pleasure__title">С удовольствием предоставляем наш сервис</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="catalog_pleasure__subtitle">Ресепшн 24/7</div>
+                        <div class="catalog_pleasure__text">Стойка ресепшн работает с 8:00 — 23:00, в остальное время по
+                            телефону. Если вы заезжаете после 23:00 просто предупредите нас заранее</div>
+                        <div class="catalog_pleasure__weight">Администраторы:</div>
+                        <ul>
+                            <li>Помогут заказать такси или трансфер с аэропорта / в аэропорт</li>
+                            <li>Порекомендуют ресторан и забронируют столик</li>
+                            <li>Посоветуют куда сходить вдвоем или с детьми. Свяжутся с вашим партнером для организации
+                                экскурсии или активного отдыха</li>
+                        </ul>
+                        <div class="catalog_pleasure__subtitle margintop">Room service</div>
+                        <div class="catalog_pleasure__weight">В стоимость включены:</div>
+                        <ul>
+                            <li>Ежедневная уборка</li>
+                            <li>Ежедневная смена полотенец</li>
+                            <li>Смена постельного белья каждую 3-ю ночь</li>
+                            <li>Пляжные полотенца по запросу</li>
+                        </ul>
+                        <div class="catalog_pleasure__weight">Вы можете заказать:</div>
+                        <ul>
+                            <li>Досрочную смену белья — 10€</li>
+                            <li>Химчистку, глажку, стирку ваших вещей</li>
+                        </ul>
+                        <a href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./image/pleasure.png" alt="pleasure">
+                        <div class="catalog_pleasure__subtitle margintop">Завтраки</div>
+                        <ul>
+                            <li>Ежедневно с 8:30 до 10:00</li>
+                            <li>Вы можете забронировать апартаменты с завтраками или посещать завтраки по желанию</li>
+                            <li>Стоимость — 5€</li>
+                            <li>Дети до 12 лет завтракают со взрослыми бесплатно</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="home_winter">
+            <div class="container">
+                <div class="home_winter__title" id="#time">Наш сервис в <span class="span_blue">зимний сезон</span></div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 home_winter__reserve">
+                        <!-- <div class="home_winter__subtitle">Сниженная стоимость и тихая обстановка</div>
+                    <img src="./image/home-cat.png" alt=""> -->
+                        <div class="home_winter__weightsubtitle">
+                            Сервис включен в стоимость:
+                        </div>
+                        <div class="home_winter__block">
+                            <img src="./image/noun-reception-3931388 1.png" alt="" class="home_winter__block_icon">
+                            <div class="home_winter__block_text">Стойка ресепшен работает с 9:00 – 23:00</div>
+                        </div>
+                        <div class="home_winter__block">
+                            <img src="./image/reception-bell.png" alt="" class="home_winter__block_icon">
+                            <div class="home_winter__block_text">Администратор на связи 24/7</div>
+                        </div>
+                        <div class="home_winter__block">
+                            <img src="./image/cleaning.png" alt="" class="home_winter__block_icon">
+                            <div class="home_winter__block_text">Влажная уборка 2 раза в неделю</div>
+                        </div>
+                        <div class="home_winter__block">
+                            <img src="./image/towel.png" alt="" class="home_winter__block_icon">
+                            <div class="home_winter__block_text">Замена полотенец 2 раза в неделю</div>
+                        </div>
+                        <div class="home_winter__block">
+                            <img src="./image/dry-wash.png" alt="" class="home_winter__block_icon">
+                            <div class="home_winter__block_text">Смена постельного белья 1 раз в неделю</div>
+                        </div>
+                        <div class="home_winter__block">
+                            <img src="./image/parking.png" alt="" class="home_winter__block_icon">
+                            <div class="home_winter__block_text">Паркинг</div>
+                        </div>
+                        <div class="home_winter__block">
+                            <img src="./image/washing-machine.png" alt="" class="home_winter__block_icon">
+                            <div class="home_winter__block_text">Возможность использования стиральной <br>/ сушильной
+                                машины
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                        <div class="swiper WinterSlide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./image/otel-sofia.png" alt="otel"
+                                        class="home_winter__img"></div>
+                                <div class="swiper-slide"><img src="./image/choose-1.png" alt="otel"
+                                        class="home_winter__img"></div>
+                                <div class="swiper-slide"><img src="./image/otel-sofia.png" alt="otel"
+                                        class="home_winter__img"></div>
+                            </div>
+                            <div class="winter_slider__flex">
+                                <div class="swiper-button-prev"><img src="./image/blue-prev-slide.png" alt="prev"></div>
+                                <div class="swiper-button-next"><img src="./image/blue-slide.png" alt="next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="home_winter__listflex">
+                            <div class="home_winter__listflex_text">
+                                Долгосрочная аренда апартаментов:
+                            </div>
+                            <div style="display: flex; gap: 30px;">
+                                <div class="home_winter__list_bottom">
+                                    245€ в неделю
+                                </div>
+                                <div class="home_winter__list_bottom">
+                                    990€ в месяц
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="home_winter__flex">
+                            <div class="home_winter__text">Вы фрилансер? Можете позволить себе работать удаленно/не
+                                работать? Устали от серых<br /> будней?
+                                Давайте проведем зиму вместе на солнечном побережье!</div>
+
+                            <div class="home_winter__text">Самое время подтянуть испанский, научиться рисовать,
+                                поужинать на пляже, отправиться в пешую прогулку по горам или на яхте на рыбалку…
+                                Спросите
+                                нас у нас масса идей для
+                                вашего удовольствия</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="home_contact">
+            <div class="container container-off">
+                <div class="home_contact__button-flex">
+                    <div class="home-width">
+                        <div class="home_contact__title">Контакты</div>
+                        <div class="home_contact__flex">
+                            <div class="home_contact__item">
+                                <img src="./image/icons_calendar.png" alt="phone">
+                                <a href="tel:+34 696 398 157">+34 696 398 157</a>
+                            </div>
+                            <div class="home_contact__item">
+                                <img src="./image/bx_map.png" alt="adres">
+                                Calle Oviedo, 6, 03502 Benidorm, Alicante, Ispanya
+                            </div>
+                            <div class="home_contact__item">
+                                <img src="./image/ci_mail.png" alt="mail">
+                                <a href="mailto:reseption@aparthotel-sofia.com">reseption@aparthotel-sofia.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://goo.gl/maps/tuMLRkZSi1duGzMB7" class="contact_button"
+                        target="_blank">Схема<br>проезда</a>
+                </div>
+                <div class="home_landmark__flex">
+                    <div class="home_landmark__overflow">
+                        <ul class="home_landmark">
+                            <li class="active" data-id="1">Апарт отель София</li>
+                            <li data-id="2">Пляж Поньенте</li>
+                            <li data-id="3">Поле для гольфа Las Rejas</li>
+                            <li data-id="4">Пляж Маль Пас</li>
+                            <li data-id="5">Парк аттракционов Terra Mítica</li>
+                            <li data-id="6">Аквапарк «Аква Натура»</li>
+                            <li data-id="7">Ресторан Va Bene</li>
+                            <li data-id="8">Ресторан Va Bene</li>
+                            <li data-id="9">Ресторан Va Bene</li>
+                        </ul>
+                    </div>
+                    <div id="map" style="height: 555px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-sm-6">
+                    <a href="/">
+                        <img src="./image/logo-sofia.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <a href="/" class="footer-politica">Условия и положения</a>
+                    <div class="footer-legal">Юридические детали</div>
+                    <div class="footer-legal_text">Sofia-Star S.L.U.<br>
+                        NIF B54865431<br>
+                        Calle Oviedo, 6<br>
+                        Benidorm (Alicante), Spain</div>
+                    <a href="#" class="footer-politica">Политика конфиденциальности</a>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer_adress">Calle Oviedo, 6<br>Benidorm (Alicante), Spain</div>
+                    <div class="footer_adress">WhatsApp <a href="tel:+34 696 398 157">+34 696 398 157</a></div>
+                    <a href="mailto:Reception@aparthotel-sofia.com"
+                        class="footer_adress">Reception@aparthotel-sofia.com</a>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <a href="#" class="footer_contact">Instagram</a>
+                    <a href="#" class="footer_contact">Facebook</a>
+                    <a href="https://www.airbnb.ru/" class="footer_contact">Airbnb</a>
+                    <a href="https://www.tripadvisor.ru/" class="footer_contact">Tripadvisor</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--модалка почему стоит выбрать нас-->
+
+    <div class="home_modal__choose">
+        <div class="home_modal__right">
+            <div class="home_choose__content">
+                <div class="home_choose__close">
+                    <img src="./image/close_modal.png" alt="close">
+                </div>
+                <div class="home_choose-modal__block">
+                    <div class="home_choose-modal__title"></div>
+                    <div class="home_choose__description"></div>
+                    <div class="h3"></div>
+                    <p></p>
+                    <img src="./image/choose-1" alt="choose" class="home_choose__img">
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--заявка модалка-->
+    <div class="home_modal">
+        <div class="home_modal__right">
+            <form method="post" class="home_modal__content">
+                <div class="home_modal__close">
+                    <img src="./image/close_modal.png" alt="close">
+                </div>
+                <div class="home_modal__title">Заказать звонок</div>
+                <div class="home_modal__subtitle">Заполните форму и наш специалист свяжется с вами в ближайшее время
+                </div>
+                <div class="home_modal__flex">
+                    <div class="home_bell__position">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <img src="./image/ant-design_user-outlined.png" alt="">
+                    </div>
+                    <div class="home_bell__position">
+                        <input type="text" name="phone" placeholder="Ваш номер">
+                        <img src="./image/carbon_phone.png" alt="">
+                    </div>
+                    <div class="home_comment__position">
+                        <input type="text" name="comment" placeholder="Ваш комментарий">
+                        <img src="./image/bx_comment.png" alt="">
+                    </div>
+                    <div class="home__request__flex">
+                        <button class="home_request__button">Оставить<br>заявку</button>
+                        <div class="home_request__text">Нажимая кнопку «Оставить заявку», вы соглашаетесь на
+                            обработку персональных данных
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaGuxbttrMPqk7jfUqoSB3bGOlT6oSO_8&callback=initMap"></script>
+
+</body>
+
+</html>

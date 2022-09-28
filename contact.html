@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="./style/main.css" type="text/css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/map-style.css" />
+</head>
+
+<body>
+    <header class="header_top">
+        <div class="container">
+            <div class="header_top__logo">
+                <a href="/">
+                    <img src="./image/logo-sofia.svg" alt="logo">
+                </a>
+                <div class="languages_width">
+                    <div class="button_lang__text">RU</div>
+                    <ul class="languages_list">
+                        <li class="active">
+                            <a href="#">RU</a>
+                        </li>
+                        <li>
+                            <a href="#">ENG</a>
+                        </li>
+                        <li>
+                            <a href="#">ES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_menu">
+                <span></span>
+            </div>
+            <div class="header_top__data">
+                <a href="tel:+34 696 398 157" class="header_top__phone">+34 696 398 157</a>
+                <button class="header_top__booking">Бронирование</button>
+            </div>
+        </div>
+    </header>
+
+    <header class="header_none">
+        <div class="container">
+            <ul class="header_none__nav">
+                <div class="mobile-top_data">
+                    <a href="tel:+34 696 398 157" class="header_top__phone">+34 696 398 157</a>
+                    <button class="header_top__booking">Бронирование</button>
+                </div>
+                <li><a href="#">Главная</a></li>
+                <li><a href="/#content" class="transparent">Описание</a></li>
+                <li><a href="/#programm" class="transparent">Программа лояльности</a></li>
+                <li><a href="/#winter" class="transparent">Зимний сезон</a></li>
+                <li><a href="/#reviews" class="transparent">Отзывы и обратная связь</a></li>
+            </ul>
+            <ul class="header_none__nav">
+                <li><a href="#">Аппартаменты и сервис</a></li>
+                <li><a href="#" class="transparent">Каталог апартаментов</a></li>
+                <li><a href="#service" class="transparent">Сервис</a></li>
+                <li><a href="#time" class="transparent">Долгосрочная аренда</a></li>
+            </ul>
+            <ul class="header_none__nav">
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main_blue">
+
+        <div class="container">
+            <ul class="breadcrumps">
+                <li><a href="/">Главная</a></li>
+                <span>—</span>
+                <li>Контакты</li>
+            </ul>
+        </div>
+
+
+        <section class="home_contact">
+            <div class="container container-off">
+                <div class="home_contact__button-flex">
+                    <div class="home-width">
+                        <div class="home_contact__title">Контакты</div>
+                        <div class="home_contact__flex">
+                            <div class="home_contact__item">
+                                <img src="./image/icons_calendar.png" alt="phone">
+                                <a href="tel:+34 696 398 157">+34 696 398 157</a>
+                            </div>
+                            <div class="home_contact__item">
+                                <img src="./image/bx_map.png" alt="adres">
+                                Calle Oviedo, 6, 03502 Benidorm, Alicante, Ispanya
+                            </div>
+                            <div class="home_contact__item">
+                                <img src="./image/ci_mail.png" alt="mail">
+                                <a href="mailto:reseption@aparthotel-sofia.com">reseption@aparthotel-sofia.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://goo.gl/maps/tuMLRkZSi1duGzMB7" class="contact_button"
+                        target="_blank">Как к нам добраться?</a>
+                </div>
+                <div class="home_landmark__flex">
+                    <div class="home_landmark__overflow">
+                        <ul class="home_landmark">
+                            <li class="active" data-id="1">Апарт отель София</li>
+                            <li data-id="2">Пляж Поньенте</li>
+                            <li data-id="3">Поле для гольфа Las Rejas</li>
+                            <li data-id="4">Пляж Маль Пас</li>
+                            <li data-id="5">Парк аттракционов Terra Mítica</li>
+                            <li data-id="6">Аквапарк «Аква Натура»</li>
+                            <li data-id="7">Ресторан Va Bene</li>
+                            <li data-id="8">Ресторан Va Bene</li>
+                            <li data-id="9">Ресторан Va Bene</li>
+                        </ul>
+                    </div>
+                    <div id="map" style="height: 555px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-sm-6">
+                    <a href="/">
+                        <img src="./image/logo-sofia.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <a href="/" class="footer-politica">Условия и положения</a>
+                    <div class="footer-legal">Юридические детали</div>
+                    <div class="footer-legal_text">Sofia-Star S.L.U.<br>
+                        NIF B54865431<br>
+                        Calle Oviedo, 6<br>
+                        Benidorm (Alicante), Spain</div>
+                    <a href="#" class="footer-politica">Политика конфиденциальности</a>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer_adress">Calle Oviedo, 6<br>Benidorm (Alicante), Spain</div>
+                    <div class="footer_adress">WhatsApp <a href="tel:+34 696 398 157">+34 696 398 157</a></div>
+                    <a href="mailto:Reception@aparthotel-sofia.com"
+                        class="footer_adress">Reception@aparthotel-sofia.com</a>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <a href="#" class="footer_contact">Instagram</a>
+                    <a href="#" class="footer_contact">Facebook</a>
+                    <a href="https://www.airbnb.ru/" class="footer_contact">Airbnb</a>
+                    <a href="https://www.tripadvisor.ru/" class="footer_contact">Tripadvisor</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--модалка почему стоит выбрать нас-->
+
+    <div class="home_modal__choose">
+        <div class="home_modal__right">
+            <div class="home_choose__content">
+                <div class="home_choose__close">
+                    <img src="./image/close_modal.png" alt="close">
+                </div>
+                <div class="home_choose-modal__block">
+                    <div class="home_choose-modal__title"></div>
+                    <div class="home_choose__description"></div>
+                    <div class="h3"></div>
+                    <p></p>
+                    <img src="./image/choose-1" alt="choose" class="home_choose__img">
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--заявка модалка-->
+    <div class="home_modal">
+        <div class="home_modal__right">
+            <form method="post" class="home_modal__content">
+                <div class="home_modal__close">
+                    <img src="./image/close_modal.png" alt="close">
+                </div>
+                <div class="home_modal__title">Заказать звонок</div>
+                <div class="home_modal__subtitle">Заполните форму и наш специалист свяжется с вами в ближайшее время
+                </div>
+                <div class="home_modal__flex">
+                    <div class="home_bell__position">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <img src="./image/ant-design_user-outlined.png" alt="">
+                    </div>
+                    <div class="home_bell__position">
+                        <input type="text" name="phone" placeholder="Ваш номер">
+                        <img src="./image/carbon_phone.png" alt="">
+                    </div>
+                    <div class="home_comment__position">
+                        <input type="text" name="comment" placeholder="Ваш комментарий">
+                        <img src="./image/bx_comment.png" alt="">
+                    </div>
+                    <div class="home__request__flex">
+                        <button class="home_request__button">Оставить<br>заявку</button>
+                        <div class="home_request__text">Нажимая кнопку «Оставить заявку», вы соглашаетесь на
+                            обработку персональных данных
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaGuxbttrMPqk7jfUqoSB3bGOlT6oSO_8&callback=initMap"></script>
+
+</body>
+
+</html>
