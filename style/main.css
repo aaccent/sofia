@@ -47,6 +47,12 @@
 }
 
 @font-face {
+    font-family: 'Zapfino Extra';
+    src: url('../font/ZapfinoExtraLT-One.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Georgia';
     src: url('../font/Georgia.woff2') format('woff2');
     font-style: normal;
@@ -401,16 +407,27 @@ select:-webkit-autofill:focus {
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
-    line-height: 63px;
+    line-height: 70px;
     text-transform: uppercase;
     color: #ffffff;
     width: 100%;
     max-width: 977px;
+    position: relative;
 }
 
 .home_slide__title span {
-    font-family: 'Zapfino';
-    font-size: 72px;
+    font-family: 'Zapfino Extra';
+    font-size: 98px;
+    text-transform: none;
+}
+
+.home_slide__title .span-1 {
+    font-family: 'Georgia';
+    font-size: 19px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 35px;
+    left: 85px;
 }
 
 .homeSlide .container {
@@ -429,7 +446,7 @@ select:-webkit-autofill:focus {
     font-size: 16px;
     line-height: 145%;
     height: 174px;
-    width: 174px;
+    max-width:174px;
     border-radius: 50%;
     color: #ffffff;
 }
@@ -2214,12 +2231,7 @@ main .home_winter__list_bottom:before {
 
 @media (min-width:992px) and (max-width:1199px) {
     .homeSlide .container {
-        align-items: flex-end !important;
         padding: 0 0 30px 0 !important;
-    }
-
-    .home_slide__title {
-        max-width: 520px !important;
     }
 
     .homeSlide .swiper-button-next {
@@ -2466,6 +2478,12 @@ main .home_winter__list_bottom:before {
         font-size: 35px;
         text-transform: none;
     }
+
+    .home_slide__title .span-1 {
+        position: unset;
+        font-size: 35px;
+        text-transform: none;
+    }
 }
 
 @media (max-width:991px) {
@@ -2537,7 +2555,7 @@ main .home_winter__list_bottom:before {
     }
 
     .home_choose__content {
-        padding: 100px 20px 40px 20px;
+        padding: 65px 20px 40px 20px;
     }
 
     .home_choose-modal__block {
@@ -2547,6 +2565,16 @@ main .home_winter__list_bottom:before {
     .home_choose__close,
     .home_bonus__close {
         right: 10px;
+        top: 20px!important;
+    }
+
+    .home_bonus__description {
+        font-size: 24px;
+        padding: 0 0 20px 0;
+    }
+
+    .home_bonus__text {
+        padding: 20px 0 15px 0;
     }
 
     .home_landmark__flex {
@@ -2767,12 +2795,12 @@ main .home_winter__list_bottom:before {
 
 @media (min-width:1200px) and (max-width:1800px) {
     .home_slide__flex {
-        gap: 40px;
+        gap: 20px;
     }
 
     .home_slide__title {
         font-size: 42px;
-        max-width: 650px;
+        max-width: 670px;
         line-height: 55px;
     }
 
@@ -3026,5 +3054,12 @@ main .home_winter__list_bottom:before {
     .catalog_page__flex_container {
         width: 100%;
         max-width: 800px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1250px) {
+    .home_slide__button {
+        max-width:160px;
+        max-height: 160px;
     }
 }

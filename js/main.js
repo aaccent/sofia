@@ -333,7 +333,7 @@ async function initMap() {
 			)
 
 			const display =
-				Math.abs(divPosition.x) < 4000 && Math.abs(divPosition.y) < 4000
+				Math.abs(divPosition.x) < 2000 && Math.abs(divPosition.y) < 4000
 					? 'block'
 					: 'none'
 
@@ -352,7 +352,7 @@ async function initMap() {
 
 	const mapStyles = await getStyles()
 	map = new google.maps.Map(document.getElementById('map'), {
-		center: { lat: 38.544546, lng: -0.150866 }, zoom: 13, styles: mapStyles,
+		 styles: mapStyles,
 	})
 
 	function createMarker(data) {
