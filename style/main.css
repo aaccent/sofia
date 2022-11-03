@@ -2878,7 +2878,13 @@ main .home_winter__list_bottom:before {
     }
 
     .home_slide__title span {
-        font-size: 58px;
+        font-size: 98px;
+        position: absolute;
+        top: -10px;
+    }
+
+    .home_slide__title .span-1 {
+        top: 20px;
     }
 
     .homeSlide .swiper-button-next {
