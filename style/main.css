@@ -846,13 +846,13 @@ select:-webkit-autofill:focus {
     display: flex;
 }
 
-.bonus_link {
+.bonus_link, .time_link {
     text-decoration: underline;
     color: #4DABCC;
     text-align: left;
 }
 
-.bonus_link:hover {
+.bonus_link:hover, .time_link:hover {
     text-decoration: none;
 }
 
@@ -869,6 +869,10 @@ select:-webkit-autofill:focus {
     text-transform: uppercase;
     position: relative;
     margin: 0 0 110px 0;
+}
+
+main .home_winter__title {
+    margin: 0 0 60px 0;
 }
 
 .catalog_cafe__title {
@@ -2394,7 +2398,7 @@ main .home_winter__list_bottom:before {
         font-size: 35px;
         line-height: 40px;
         text-transform: none;
-        margin: 0 0 20px 0;
+        margin: 0 0 20px 0!important;
     }
 
     .home_winter__title span {
@@ -2551,6 +2555,10 @@ main .home_winter__list_bottom:before {
 
     .header_top img {
         height: unset;
+    }
+
+    .catalog_cafe {
+        padding: 0 0 60px 0;
     }
 
 }
@@ -2814,7 +2822,7 @@ main .home_winter__list_bottom:before {
         right: 0;
     }
 
-    .bonus_link {
+    .bonus_link, .time_link {
         padding: 0 0 20px 0;
     }
 
