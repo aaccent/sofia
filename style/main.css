@@ -1224,7 +1224,8 @@ main .home_winter__title {
 
 .home_modal__close,
 .home_choose__close,
-.home_bonus__close {
+.home_bonus__close,
+.home_modal__success--close {
     position: absolute;
     top: 50px;
     right: 50px;
@@ -2757,7 +2758,8 @@ main .home_winter__list_bottom:before {
         font-size: 26px;
     }
 
-    .home_modal__close {
+    .home_modal__close,
+    .home_modal__success--close {
         top: 25px;
         right: 25px;
     }

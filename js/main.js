@@ -28,9 +28,10 @@ $(document).ready(function () {
 		$('body').removeClass('hidden');
 	});
 
-	$('.home_modal__close').on('click', function (e) {
+	$('.home_modal__success--close').on('click', function (e) {
 		e.preventDefault();
 		$('.home_modal__success').toggle();
+		$('.home_modal').toggle();
 		$('body').removeClass('hidden');
 	});
 
