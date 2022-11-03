@@ -1,42 +1,18 @@
 $(document).ready(function () {
 
-	// Меню
-	if ($(window).width() < 767) {
-		$('.header_menu').on('click', function (e) {
-			e.preventDefault();
-			$('.header_none').toggle();
-			$('body').toggleClass('hidden');
-		});
-	}
-
-
-	const menuBtn = $(".header_menu"),
-		menu = $(".header_none");
-
-	menuBtn.on("click", function () {
-		if ($(this).hasClass("active")) {
-			$(this).removeClass("active");
-			menu.slideUp();
-		} else {
-			$(this).addClass("active");
-			menu.slideDown();
-		}
-	});
-
-	$(document).click(function (e) {
-		if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0) {
-			menu.slideUp();
-			menuBtn.removeClass("active");
-		};
-	});
-
 	//модалка
-
 	$('.home_slide__button, .header_top__booking').on('click', function (e) {
 		e.preventDefault();
 		$('.home_modal').toggle();
 		$('body').addClass('hidden');
 	});
+
+	$('.home_request__button').on('click', function (e) {
+		e.preventDefault();
+		$('.home_modal__success').toggle();
+		$('body').toggleClass('hidden');
+	});
+
 
 	$('.home_modal__close').on('click', function (e) {
 		e.preventDefault();
@@ -52,25 +28,32 @@ $(document).ready(function () {
 		$('body').removeClass('hidden');
 	});
 
-	// модалка почему стоит выбрать нас - главная страница
+	$('.home_modal__close').on('click', function (e) {
+		e.preventDefault();
+		$('.home_modal__success').toggle();
+		$('body').removeClass('hidden');
+	});
+
+	// 
 	const content = $('.home_modal__choose');
+	
 	$('.home_slide__img').on('click', function (e) {
 		e.preventDefault();
-		$('.home_modal__choose').toggle();
-		$('body, .home_modal__choose').addClass('hidden');
-		const title = $(this).closest('.home_choose__click').find('.home_choose__subtitle').html();
-		const description = $(this).closest('.home_choose__click').find('.home_choose__text').html();
-		const h3 = $(this).closest('.home_choose__click').find('.h3').html();
-		const p = $(this).closest('.home_choose__click').find('p').html();
-		const account_img = $(this).closest('.home_choose__click').find('.home_slide__img').css('background-image').replace(/^url\(['"]?/, '').replace(/['"]?\)$/, '');
-		console.log(account_img)
+		if (!$(this).hasClass("no-modal")) {
+			$('.home_modal__choose').toggle();
+			$('body, .home_modal__choose').addClass('hidden');
+			const title = $(this).closest('.home_choose__click').find('.home_choose__subtitle').html();
+			const h3 = $(this).closest('.home_choose__click').find('.h3').html();
+			const p = $(this).closest('.home_choose__click').find('p').html();
+			const account_img = $(this).closest('.home_choose__click').find('.home_slide__img').css('background-image').replace(/^url\(['"]?/, '').replace(/['"]?\)$/, '');
+			const description = $(this).closest('.home_choose__click').find('.home_choose__text').html();
+			content.find('.home_choose-modal__title').html(title);
+			content.find('.home_choose__description').html(description);
+			content.find('.h3').html(h3);
+			content.find('p').html(p);
+			content.find('.home_choose__img').attr({ src: account_img });
+		}
 
-
-		content.find('.home_choose-modal__title').html(title);
-		content.find('.home_choose__description').html(description);
-		content.find('.h3').html(h3);
-		content.find('p').html(p);
-		content.find('.home_choose__img').attr({ src: account_img });
 	});
 
 	$('.home_choose__close').on('click', function (e) {
@@ -103,6 +86,7 @@ $(document).ready(function () {
 		bonus_content.find('p').html(p_bonus);
 	});
 
+	// закрытие модалки бонус на главной
 	$('.home_bonus__close').on('click', function (e) {
 		e.preventDefault();
 		$('.home_modal__bonus').toggle();
@@ -118,8 +102,7 @@ $(document).ready(function () {
 	});
 
 
-	//слайдер на главной
-
+	// 1 слайдер на главной
 	const swiper = new Swiper(".homeSlide", {
 
 		loop: true,
@@ -194,20 +177,30 @@ $(document).ready(function () {
 	});
 
 
-	$(".mobile-tabs").click(function () {
-		$(".item__tabs").toggleClass('item__tabs_active');
-		if ($(".item__tabs").hasClass("item__tabs_active")) {
-			$(this).addClass("active");
-		} else {
-			$(this).removeClass("active");
-		}
-	});
-	$(".item__tabitem").click(function () {
-		$(".mobile-tabs").text($(this).text());
-		$(".mobile-tabs").removeClass('active');
-		$(".item__tabs").removeClass('item__tabs_active');
+	// каталог слайд кафе
+	const cafeslide = new Swiper(".cafeslide", {
+
+		loop: true,
+		slidesPerView: 1,
+
+		navigation: {
+			nextEl: ".cafe-button-next",
+			prevEl: ".cafe-button-prev",
+		},
 	});
 
+
+	// каталог слайд бар
+	const barslide = new Swiper(".barslide", {
+
+		loop: true,
+		slidesPerView: 1,
+
+		navigation: {
+			nextEl: ".bar-button-next",
+			prevEl: ".bar-button-prev",
+		},
+	});
 
 	//выбор языка - хедер
 	$(".button_lang__text").click(function () {
@@ -236,7 +229,6 @@ $(document).ready(function () {
 		},
 
 		breakpoints: {
-			// when window width is >= 320px
 
 			501: {
 				slidesPerView: 4,
@@ -273,17 +265,6 @@ $(document).ready(function () {
 		if (top < 200) $(".news_read__block").removeClass('news_read__block-sticky');
 		else $(".news_read__block").addClass('news_read__block-sticky');
 	});
-
-
-	// плавный переход по якорям
-
-	$(".header_none__nav li a").click(function () {
-		elementClick = jQuery(this).attr("href")
-		destination = jQuery(elementClick).offset().top;
-		jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 1100);
-		return false;
-	});
-
 
 });
 
@@ -352,7 +333,7 @@ async function initMap() {
 
 	const mapStyles = await getStyles()
 	map = new google.maps.Map(document.getElementById('map'), {
-		 styles: mapStyles,
+		styles: mapStyles,
 	})
 
 	function createMarker(data) {
@@ -783,3 +764,37 @@ function closeActiveMarker() {
 }
 
 window.initMap = initMap
+
+// куки
+function checkCookies() {
+	let cookieDate = localStorage.getItem('cookieDate');
+	let cookieNotification = document.getElementById('cookie_notification');
+	let cookieBtn = cookieNotification.querySelector('.cookie_accept');
+
+	// Если записи про кукисы нет или она просрочена на 1 год, то показываем информацию про кукисы
+	if (!cookieDate || (+cookieDate + 31536000000) < Date.now()) {
+		cookieNotification.classList.add('show');
+	}
+
+	// При клике на кнопку, в локальное хранилище записывается текущая дата в системе UNIX
+	cookieBtn.addEventListener('click', function () {
+		//localStorage.setItem( 'cookieDate', Date.now() );
+		cookieNotification.classList.remove('show');
+	})
+}
+checkCookies();
+
+
+// выпадающее меню
+var burgerMenu = document.querySelector('.header_menu');
+var overlay = document.querySelector('.header_none');
+burgerMenu.addEventListener('click', function () {
+	this.classList.toggle("active");
+	overlay.classList.toggle("active_block");
+});
+overlay.addEventListener('click', function (e) {
+	if (e.target.matches('a')) {
+		overlay.classList.remove('active_block');
+		burgerMenu.classList.remove('active');
+	}
+});

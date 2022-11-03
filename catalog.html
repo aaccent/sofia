@@ -50,17 +50,18 @@
                     <a href="tel:+34 696 398 157" class="header_top__phone">+34 696 398 157</a>
                     <button class="header_top__booking">Бронирование</button>
                 </div>
-                <li><a href="#">Главная</a></li>
-                <li><a href="/#content" class="transparent">Описание</a></li>
-                <li><a href="/#programm" class="transparent">Программа лояльности</a></li>
-                <li><a href="/#winter" class="transparent">Зимний сезон</a></li>
-                <li><a href="/#reviews" class="transparent">Отзывы и обратная связь</a></li>
+                <li><a href="/main.html">Главная</a></li>
+                <li><a href="/main.html#content" class="transparent">Описание</a></li>
+                <li><a href="/main.html#programm" class="transparent">Программа лояльности</a></li>
+                <li><a href="/main.html#winter" class="transparent">Зимний сезон</a></li>
+                <li><a href="/main.html#reviews" class="transparent">Отзывы и обратная связь</a></li>
             </ul>
             <ul class="header_none__nav">
-                <li><a href="#">Аппартаменты и сервис</a></li>
-                <li><a href="#" class="transparent">Каталог апартаментов</a></li>
-                <li><a href="#service" class="transparent">Сервис</a></li>
-                <li><a href="#time" class="transparent">Долгосрочная аренда</a></li>
+                <li><a href="/catalog.html">Аппартаменты и сервис</a></li>
+                <li><a href="/catalog.html#catalog" class="transparent">Каталог апартаментов</a></li>
+                <li><a href="/catalog.html#service" class="transparent">Сервис</a></li>
+                <li><a href="/catalog.html#time" class="transparent">Долгосрочная аренда</a></li>
+                <li><a href="/catalog.html#bar" class="transparent">Бар</a></li>
             </ul>
             <ul class="header_none__nav">
                 <li><a href="#">Блог</a></li>
@@ -68,6 +69,7 @@
             </ul>
         </div>
     </header>
+
 
     <main>
         <div class="container">
@@ -77,7 +79,7 @@
                 <li>Каталог аппартаментов</li>
             </ul>
         </div>
-        <section class="catalog_block">
+        <section class="catalog_block anchor" id="catalog">
             <div class="container">
                 <div class="catalog_title">Каталог <span>апартаментов</span></div>
                 <div class="catalog_subtitle">Sofia — больше, чем апартаменты в аренду и лучше, чем отель. В
@@ -178,9 +180,9 @@
             </div>
         </section>
 
-        <section class="catalog_pleasure">
+        <section class="catalog_pleasure anchor" id="service">
             <div class="container">
-                <div id="#service" class="catalog_pleasure__title">С удовольствием предоставляем наш сервис</div>
+                <div class="catalog_pleasure__title">С удовольствием предоставляем наш сервис</div>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="catalog_pleasure__subtitle">Ресепшн 24/7</div>
@@ -223,9 +225,10 @@
         </section>
 
 
-        <section class="home_winter">
+        <section class="home_winter anchor" id="time">
             <div class="container">
-                <div class="home_winter__title" id="#time">Наш сервис в <span class="span_blue">зимний сезон</span></div>
+                <div class="home_winter__title">Наш сервис в <span class="span_blue">зимний сезон</span>
+                </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-12 home_winter__reserve">
                         <!-- <div class="home_winter__subtitle">Сниженная стоимость и тихая обстановка</div>
@@ -312,6 +315,73 @@
             </div>
         </section>
 
+        <section class="catalog_cafe anchor" id="bar">
+            <div class="container">
+                <div class="catalog_cafe__title">Кафе</div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="catalog_cafe__sutitle">Завтраки</div>
+                        <div class="catalog_cafe__text">
+                            <ul>
+                                <li>Ежедневно с 8:30 до 10:00</li>
+                                <li>Вы можете забронировать апартаменты с завтраками или посещать завтраки по желанию
+                                </li>
+                                <li>Стоимость — 5€</li>
+                                <li>Дети до 12 лет завтракают со взрослыми бесплатно</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="cafeslide swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./image/203001629.jpg" class="cafeslide_img" alt="">
+                                </div>
+                                <div class="swiper-slide"><img src="./image/185810667.jpg" class="cafeslide_img" alt="">
+                                </div>
+                                <div class="swiper-slide"><img src="./image/185810684.jpg" class="cafeslide_img" alt="">
+                                </div>
+                            </div>
+                            <div class="cafe_slider__flex">
+                                <div class="cafe-button-prev"><img src="./image/blue-prev-slide.png" alt="prev"></div>
+                                <div class="cafe-button-next"><img src="./image/blue-slide.png" alt="next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-40px column-reserve">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="barslide swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./image/185810919.jpg" class="barslide_img" alt="">
+                                </div>
+                                <div class="swiper-slide"><img src="./image/203001518.jpg" class="barslide_img" alt="">
+                                </div>
+                                <div class="swiper-slide"><img src="./image/203001629.jpg" class="barslide_img" alt="">
+                                </div>
+                            </div>
+                            <div class="cafe_slider__flex">
+                                <div class="bar-button-prev"><img src="./image/blue-prev-slide.png" alt="prev"></div>
+                                <div class="bar-button-next"><img src="./image/blue-slide.png" alt="next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="catalog_cafe__sutitle">Бар</div>
+                        <div class="catalog_cafe__text">
+                            <p>Место, оборудованное барной стойкой, предназначенное для
+                                обслуживания посетителей и покупателей. В баре обычно продаются (или отпускаются) в
+                                зависимости от специализации алкогольные и (или) безалкогольные напитки, горячие и
+                                прохладительные напитки, коктейли, холодные и горячие закуски, блюда в ограниченном
+                                ассортименте, и готовые товары.</p>
+                            <p>В ассортименте бара, как правило, представлены кондитерские изделия, закуски,
+                                десерты, крепкие, слабоалкогольные и безалкогольные напитки. Особое место в меню
+                                отводится чаю и кофе.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
         <section class="home_contact">
@@ -388,6 +458,13 @@
                 </div>
             </div>
         </div>
+        <!--куки--> 
+        <div id="cookie_notification" class="show">
+            <p>Для улучшения работы сайта и его взаимодействия с пользователями мы используем <a href="./image/test.pdf" target="_blank">файлы cookie</a>. Продолжая работу
+                с сайтом, Вы разрешаете использование cookie-файлов. Вы всегда можете отключить файлы cookie в настройках
+                Вашего браузера.</p>
+            <button class="button cookie_accept">Принять</button>
+        </div>
     </footer>
 
     <!--модалка почему стоит выбрать нас-->
@@ -443,6 +520,20 @@
 
                 </div>
             </form>
+        </div>
+    </div>
+
+    <!--Ваша заявка отправлена-->
+    <div class="home_modal__success">
+        <div class="home_modal__right">
+            <div class="home_modal__content">
+                <div class="home_modal__close">
+                    <img src="./image/close_modal.png" alt="close">
+                </div>
+                <div class="home_modal__title">Ваша заявка отправлена!</div>
+                <div class="home_modal__subtitle">Наши менеджеры свяжутся с вами в ближайшее время
+                </div>
+            </div>
         </div>
     </div>
 
