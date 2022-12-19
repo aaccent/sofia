@@ -619,7 +619,7 @@ select:-webkit-autofill:focus {
     font-size: 58px;
     line-height: 77px;
     text-transform: uppercase;
-    margin: 0 0 60px 0;
+    margin: 0 0 30px 0;
 }
 
 .home_welcome__title span,
@@ -657,8 +657,9 @@ select:-webkit-autofill:focus {
 
 .home_welcome__img {
     max-width: 690px;
-    height: auto;
     width: 100%;
+    height: 470px;
+    object-fit: cover;
 }
 
 .home_welcome__logo {
@@ -667,6 +668,9 @@ select:-webkit-autofill:focus {
     width: 100%;
 }
 
+.welcomeSlide .home_welcome__img {
+    height: 340px;
+}
 
 .welcome-button-next {
     top: 85%;
@@ -1966,7 +1970,8 @@ main .home_winter__list_bottom:before {
 }
 
 .welcomeSlide {
-    padding: 0 0 200px 0 !important;
+    /* padding: 0 0 200px 0 !important; */
+    padding: 0 0 140px 0 !important;
     position: relative;
 }
 
@@ -1974,9 +1979,11 @@ main .home_winter__list_bottom:before {
     position: absolute;
     bottom: 0;
     content: '';
-    background-image: url('../image/logo-sofia-2.svg');
-    width: 358px;
-    height: 168px;
+    /* background-image: url('../image/logo-sofia-2.svg'); */
+    /*background-image: url('../image/logo-sofia.png');*/
+    background-image: url('../image/welcome-logo.png');
+    width: 270px;
+    height: 130px;
     background-repeat: no-repeat;
 }
 
@@ -2909,7 +2916,8 @@ main .home_winter__list_bottom:before {
     .welcomeSlide:after {
         width: 100%;
         background-size: contain;
-        bottom: -24px;
+        /* bottom: -24px; */
+        bottom: 0;
     }
 
     .service_flex {
@@ -3014,9 +3022,9 @@ main .home_winter__list_bottom:before {
         max-width: unset;
     }
 
-    .welcomeSlide {
+    /* .welcomeSlide {
         padding: 0 0 234px 0 !important;
-    }
+    } */
 
     .welcomeSlide::after {
         background-size: 78%;
@@ -3033,6 +3041,10 @@ main .home_winter__list_bottom:before {
 
     .winter_slider__background {
         min-height: 420px;
+    }
+
+    .welcomeSlide .home_welcome__img {
+        height: 470px;
     }
 }
 
@@ -3055,6 +3067,14 @@ main .home_winter__list_bottom:before {
     .catalog_img {
         height: 400px;
         max-width: unset;
+    }
+
+    .welcomeSlide .home_welcome__img {
+        height: 470px !important;
+    }
+
+    .welcomeSlide:after {
+        height: 133px;
     }
 
 }
@@ -3415,4 +3435,9 @@ main .home_winter__list_bottom:before {
 .home_slide__img__button:hover {
     background: #fff;
     color: #1955A2;
+}
+
+.home_slide__img_background p {
+    font-weight: normal;
+    margin: 0 0 30px 0;
 }
