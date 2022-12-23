@@ -472,7 +472,7 @@ async function getMarkersData() {
 			info: '250 метров',
 			markerIcon: './image/dot-place.png',
 			markerActive: './image/dot-place-open.png',
-			class: 'markergolf'
+			class: 'markergolf-left'
 		},
 		{
 			id: 7,

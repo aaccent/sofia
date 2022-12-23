@@ -1309,6 +1309,11 @@ main .home_winter__title {
     top: -10px;
 }
 
+.markergolf-left {
+    top: 56px;
+    left: 135px;
+}
+
 .marketterra {
     top: -21px;
 }
@@ -1558,15 +1563,20 @@ a.footer_contact:hover {
     /* font-family: 'Inter'; */
     font-style: normal;
     font-weight: 400;
-    font-size: 34px;
+    /* font-size: 34px; */
+    font-size: 27px;
     line-height: 133%;
     color: rgba(255, 255, 255, 0.5);
-    padding: 0 0 25px 0;
+    padding: 0 0 20px 0;
     cursor: pointer;
 }
 
 .home_landmark li.active {
     color: #ffffff;
+}
+
+.home_landmark li:last-child {
+    padding:0;
 }
 
 .btn__one {
